@@ -1,0 +1,73 @@
+<!-- templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HamroLagani Logs Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            white-space: pre-wrap;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            max-height: 300px; /* Limit the height to allow scrolling */
+            overflow-y: auto; /* Enable vertical scrollbar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logs Dashboard</h1>
+        
+        <h2>Choose log type:</h2>
+        <form action="/logs" method="post">
+            <button type="submit" name="log_type" value="marketOpenClose">Market Status</button>
+            <button type="submit" name="log_type" value="live_indexes">Live Nepse Index</button>
+            <button type="submit" name="log_type" value="live_stock">Live Stock</button>
+            <button type="submit" name="log_type" value="eps">EPS/PE Ratio</button>
+            <button type="submit" name="log_type" value="floorsheet">Floorsheet Logs</button>
+            <button type="submit" name="log_type" value="dividend">Dividend</button>
+        </form>
+        
+        <h2>Logs:</h2>
+        <pre>{{ log_content }}</pre>
+    </div>
+</body>
+</html>
