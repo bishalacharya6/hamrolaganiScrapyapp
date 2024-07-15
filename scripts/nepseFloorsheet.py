@@ -145,11 +145,12 @@ async def scrapy_extraction():
                     if "disabled" in class_value:
                         logger.info("Reached the last page. Stopping extraction.")
                         break
-                    else:
-                        logger.info("Clicking next page button...")
-                        await next_button[0].click()
-                        await asyncio.sleep(2)
-                        page_num += 1
+
+                    logger.info("Clicking next page button...")
+                    await next_button[0].click()
+                    await asyncio.sleep(2)
+                    page_num += 1
+                    
                 else:
                     logger.info("Next button not found. Stopping extraction.")
                     break

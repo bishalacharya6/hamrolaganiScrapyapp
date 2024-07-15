@@ -274,7 +274,7 @@ def LiveStockPrices():
                     logger.info(f"Current time is {current_time}. Running scheduled jobs.")
                     schedule.run_pending()
 
-                time.sleep(10)  # Check every 10 seconds
+                time.sleep(20)  # Check every 10 seconds
 
         except Exception as e:
             logger.error(f"An unexpected error occurred in schedule_jobs: {e}")
