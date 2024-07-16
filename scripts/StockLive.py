@@ -35,10 +35,10 @@ async def insert_or_update_data_into_database(data):
     cursor = None
     try:
         connection = mysql.connector.connect(
-        host=os.getenv('DB_HOST'),
-        user=os.getenv('DB_USER'),
-        password=os.getenv('DB_PASSWORD'),
-        database=os.getenv('DB_NAME')
+            host = os.getenv('MYSQL_HOST'),
+            user = os.getenv('MYSQL_USER'),
+            password = os.getenv('MYSQL_PASSWORD'),
+            name = os.getenv('MYSQL_DATABASE')
         )
         cursor = connection.cursor(dictionary=True)
 

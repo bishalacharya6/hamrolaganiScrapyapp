@@ -129,3 +129,72 @@
 
 2024-07-16 11:41:19,289 - INFO - Current time is 11:41:19.289555. Running scheduled jobs.
 2024-07-16 11:41:29,290 - INFO - Current time is 11:41:29.290511. Running scheduled jobs.
+2024-07-16 12:42:04,483 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 12:42:04,484 - INFO - Job scheduled successfully.
+2024-07-16 12:42:04,484 - INFO - Current time is 12:42:04.484721. Running scheduled jobs.
+2024-07-16 12:42:14,486 - INFO - Current time is 12:42:14.486202. Running scheduled jobs.
+2024-07-16 12:42:24,487 - INFO - Current time is 12:42:24.487117. Running scheduled jobs.
+2024-07-16 12:42:34,487 - INFO - Current time is 12:42:34.487851. Running scheduled jobs.
+2024-07-16 12:42:52,250 - INFO - Market live status: True, Current time: 12:42:34.487851
+
+2024-07-16 12:42:52,251 - INFO - Starting the scraping process...
+2024-07-16 12:42:52,252 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 12:43:02,314 - INFO - Index Name: NEPSE Index, Turnover: 3013752575.0, Last Trading Index: 2267.96, Percentage Change: 1.23
+2024-07-16 12:43:02,324 - INFO - Index Name: Non Life Insurance, Turnover: 79963634.0, Last Trading Index: 11307.64, Percentage Change: 1.14
+2024-07-16 12:43:02,335 - INFO - Index Name: Others Index, Turnover: 65621421.0, Last Trading Index: 1705.83, Percentage Change: 0.65
+2024-07-16 12:43:02,349 - INFO - Index Name: Sensitive Float Inde., Turnover: 0.0, Last Trading Index: 132.86, Percentage Change: 1.15
+2024-07-16 12:43:02,359 - INFO - Index Name: Sensitive Index, Turnover: 0.0, Last Trading Index: 401.63, Percentage Change: 1.12
+2024-07-16 12:43:02,371 - INFO - Index Name: Trading Index, Turnover: 18988229.0, Last Trading Index: 3068.06, Percentage Change: 0.63
+2024-07-16 12:43:02,385 - INFO - Index Name: Banking SubIndex, Turnover: 144582786.0, Last Trading Index: 1229.59, Percentage Change: 0.64
+2024-07-16 12:43:02,399 - INFO - Index Name: Development Bank Ind., Turnover: 126653325.0, Last Trading Index: 4516.35, Percentage Change: 1.85
+2024-07-16 12:43:02,411 - INFO - Index Name: Finance Index, Turnover: 311526725.0, Last Trading Index: 2653.09, Percentage Change: 1.87
+2024-07-16 12:43:02,423 - INFO - Index Name: Float Index, Turnover: 0.0, Last Trading Index: 154.52, Percentage Change: 1.25
+2024-07-16 12:43:02,434 - INFO - Index Name: Hotels And Tourism, Turnover: 39737770.0, Last Trading Index: 5655.51, Percentage Change: 1.72
+2024-07-16 12:43:02,445 - INFO - Index Name: HydroPower Index, Turnover: 1584935698.0, Last Trading Index: 2865.03, Percentage Change: 2.92
+2024-07-16 12:43:02,458 - INFO - Index Name: Investment, Turnover: 245813510.0, Last Trading Index: 84.88, Percentage Change: 1.53
+2024-07-16 12:43:02,469 - INFO - Index Name: Life Insurance, Turnover: 92304823.0, Last Trading Index: 10867.99, Percentage Change: 0.93
+2024-07-16 12:43:02,482 - INFO - Index Name: Manufacturing And Pr., Turnover: 81661085.0, Last Trading Index: 6753.47, Percentage Change: 0.38
+2024-07-16 12:43:02,494 - INFO - Index Name: Microfinance Index, Turnover: 181011999.0, Last Trading Index: 4858.92, Percentage Change: 0.84
+2024-07-16 12:43:02,504 - INFO - Index Name: Mutual Fund, Turnover: 7143310.0, Last Trading Index: 20.32, Percentage Change: -0.49
+2024-07-16 12:43:02,593 - INFO - Closed the browser.
+2024-07-16 12:43:02,594 - INFO - Data Extracted, Moving to Database
+2024-07-16 12:43:02,594 - INFO - Scraping process completed.
+2024-07-16 12:43:02,595 - INFO - Inserting data into the database...
+2024-07-16 12:43:02,652 - ERROR - An error occurred during the scraping process in Job Function: cannot access local variable 'connection' where it is not associated with a value
+2024-07-16 12:43:50,516 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 12:43:50,516 - INFO - Job scheduled successfully.
+2024-07-16 12:43:50,516 - INFO - Current time is 12:43:50.516019. Running scheduled jobs.
+2024-07-16 12:44:00,517 - INFO - Current time is 12:44:00.517077. Running scheduled jobs.
+2024-07-16 12:44:10,518 - INFO - Current time is 12:44:10.518503. Running scheduled jobs.
+2024-07-16 12:44:20,519 - INFO - Current time is 12:44:20.519860. Running scheduled jobs.
+2024-07-16 12:44:38,446 - INFO - Market live status: True, Current time: 12:44:20.519860
+
+2024-07-16 12:44:38,446 - INFO - Starting the scraping process...
+2024-07-16 12:44:38,447 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 12:44:47,551 - INFO - Index Name: NEPSE Index, Turnover: 3079491464.0, Last Trading Index: 2268.19, Percentage Change: 1.24
+2024-07-16 12:44:47,557 - INFO - Index Name: Non Life Insurance, Turnover: 82147748.0, Last Trading Index: 11314.73, Percentage Change: 1.2
+2024-07-16 12:44:47,567 - INFO - Index Name: Others Index, Turnover: 67134374.0, Last Trading Index: 1703.61, Percentage Change: 0.52
+2024-07-16 12:44:47,573 - INFO - Index Name: Sensitive Float Inde., Turnover: 0.0, Last Trading Index: 132.91, Percentage Change: 1.18
+2024-07-16 12:44:47,583 - INFO - Index Name: Sensitive Index, Turnover: 0.0, Last Trading Index: 401.68, Percentage Change: 1.13
+2024-07-16 12:44:47,591 - INFO - Index Name: Trading Index, Turnover: 18988229.0, Last Trading Index: 3068.06, Percentage Change: 0.63
+2024-07-16 12:44:47,600 - INFO - Index Name: Banking SubIndex, Turnover: 149195149.0, Last Trading Index: 1230.63, Percentage Change: 0.72
+2024-07-16 12:44:47,607 - INFO - Index Name: Development Bank Ind., Turnover: 127858507.0, Last Trading Index: 4511.94, Percentage Change: 1.75
+2024-07-16 12:44:47,617 - INFO - Index Name: Finance Index, Turnover: 320244168.0, Last Trading Index: 2650.19, Percentage Change: 1.76
+2024-07-16 12:44:47,628 - INFO - Index Name: Float Index, Turnover: 0.0, Last Trading Index: 154.54, Percentage Change: 1.26
+2024-07-16 12:44:47,638 - INFO - Index Name: Hotels And Tourism, Turnover: 41080510.0, Last Trading Index: 5642.08, Percentage Change: 1.48
+2024-07-16 12:44:47,650 - INFO - Index Name: HydroPower Index, Turnover: 1614869061.0, Last Trading Index: 2866.3, Percentage Change: 2.97
+2024-07-16 12:44:47,660 - INFO - Index Name: Investment, Turnover: 247878807.0, Last Trading Index: 84.97, Percentage Change: 1.64
+2024-07-16 12:44:47,669 - INFO - Index Name: Life Insurance, Turnover: 93687665.0, Last Trading Index: 10866.32, Percentage Change: 0.91
+2024-07-16 12:44:47,680 - INFO - Index Name: Manufacturing And Pr., Turnover: 83610764.0, Last Trading Index: 6754.29, Percentage Change: 0.39
+2024-07-16 12:44:47,689 - INFO - Index Name: Microfinance Index, Turnover: 186802597.0, Last Trading Index: 4856.9, Percentage Change: 0.79
+2024-07-16 12:44:47,698 - INFO - Index Name: Mutual Fund, Turnover: 7159017.0, Last Trading Index: 20.32, Percentage Change: -0.45
+2024-07-16 12:44:47,773 - INFO - Closed the browser.
+2024-07-16 12:44:47,774 - INFO - Data Extracted, Moving to Database
+2024-07-16 12:44:47,774 - INFO - Scraping process completed.
+2024-07-16 12:44:47,775 - INFO - Inserting data into the database...
+2024-07-16 12:44:47,850 - ERROR - An error occurred during the scraping process in Job Function: 'NoneType' object has no attribute 'is_connected'
+2024-07-16 12:44:57,851 - INFO - Current time is 12:44:57.851697. Running scheduled jobs.
+2024-07-16 12:45:07,853 - INFO - Current time is 12:45:07.853034. Running scheduled jobs.
+2024-07-16 12:45:17,853 - INFO - Current time is 12:45:17.853717. Running scheduled jobs.
+2024-07-16 12:45:18,385 - ERROR - An unexpected error occurred in schedule_jobs: This event loop is already running
+2024-07-16 12:45:18,385 - INFO - Attempting to restart schedule_jobs after a brief pause...

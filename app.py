@@ -4,6 +4,7 @@ from flask import Flask, render_template, request
 from concurrent.futures import ProcessPoolExecutor
 from flask.logging import default_handler
 
+from scripts import chromeKiller
 from scripts.nepseAnnouncement import announcements
 
 # Append the parent directory to sys.path
@@ -60,6 +61,8 @@ def show_logs():
         log_content = floorsheet_status()
     elif log_type == 'announcement':
         log_content = announcement_status()
+    elif log_type == 'chromekiller':
+        log_content = chromeKiller_status()
     else:
         log_content = "Select a log type above."
     return render_template('home.html', log_content=log_content)
@@ -86,6 +89,9 @@ def floorsheet_status():
 def announcement_status():
     return read_log_file('announcement.log')
 
+def chromeKiller_status():
+    return read_log_file('chromeKiller.log')
+
 
 def read_log_file(file_name):
     file_path = os.path.join(logs_dir, file_name)
@@ -107,7 +113,7 @@ def run_script(script):
 if __name__ == "__main__":
 
     # <--- Available Scripts  --->
-    scripts = [marketStatus, live_indexes, eps, dividend, LiveStockPrices, dailyFloorsheet, announcements]
+    scripts = [marketStatus, live_indexes, eps, dividend, LiveStockPrices, dailyFloorsheet, announcements, chromeKiller]
 
 
     # Create a ProcessPoolExecutor within the main block
