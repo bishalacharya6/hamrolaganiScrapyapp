@@ -1,10 +1,10 @@
 import os
-import signal
 import sys
 import psutil
 import schedule
 import time
 import logging
+import platform
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.', '..')))
 from log import configure_logging
@@ -12,11 +12,12 @@ from log import configure_logging
 # Configure logging
 try:
     logger, _ = configure_logging("chromeKiller.log", "chromeKiller")
-    logger.info(f"Log File Set!")
-except:
-    logger.error(f"Logger Setting Error")
+    logger.info("Log File Set!")
+except Exception as e:
+    print(f"Logger Setting Error: {e}")
+    sys.exit(1)
 
-def chromeKiller():
+def kill():
     """
     Kills all Chrome processes running on the machine.
     """
@@ -26,44 +27,44 @@ def chromeKiller():
             # Check if the process name contains 'chrome'
             if 'chrome' in proc.info['name'].lower():
                 try:
-                    os.kill(proc.info['pid'], signal.SIGKILL)
+                    process = psutil.Process(proc.info['pid'])
+                    process.terminate()
                     chrome_processes_killed += 1
-                    logging.info(f"Killed Chrome process with PID: {proc.info['pid']}")
+                    logger.info(f"Terminated Chrome process with PID: {proc.info['pid']}")
+                except psutil.NoSuchProcess:
+                    logger.warning(f"Process {proc.info['pid']} no longer exists.")
+                except psutil.AccessDenied:
+                    logger.error(f"Access denied to terminate process {proc.info['pid']}.")
                 except Exception as e:
-                    logging.error(f"Failed to kill Chrome process with PID: {proc.info['pid']}. Error: {e}")
+                    logger.error(f"Failed to terminate Chrome process with PID: {proc.info['pid']}. Error: {e}")
 
         if chrome_processes_killed == 0:
-            logging.info("No Chrome processes found to kill.")
+            logger.info("No Chrome processes found to terminate.")
         else:
-            logging.info(f"Total Chrome processes killed: {chrome_processes_killed}")
+            logger.info(f"Total Chrome processes terminated: {chrome_processes_killed}")
 
     except Exception as e:
-        logging.error(f"An error occurred while killing Chrome processes: {e}")
+        logger.error(f"An error occurred while terminating Chrome processes: {e}")
 
 def chromeKiller():
     """
-    Schedules the chromeKiller function to run every day at 10 PM.
+    Schedules the chromeKiller function to run every day at 12:58.
     """
     while True:
         try:
-            schedule.every().day.at("22:00").do(chromeKiller)
-            logging.info("Scheduled chromeKiller to run every day at 10 PM.")
+            schedule.every().day.at("13:02").do(kill)
+            logger.info("Scheduled chromeKiller to run every day at 12:58.")
 
             while True:
-                try:
-                    schedule.run_pending()
-                    time.sleep(60)  # Sleep for 1 min
-                except Exception as e:
-                    logger.info(f"Unexpected Error Occured {e}")
-                    break
+                logger.info("Scheduler Running.")
+                schedule.run_pending()
+                time.sleep(30)  # Sleep for 30 seconds
         except Exception as e:
-            logging.error(f"An error occurred in the scheduling loop: {e}")
+            logger.error(f"An error occurred in the scheduling loop: {e}")
+            time.sleep(60)  # Wait for 1 minute before retrying
         except KeyboardInterrupt:
+            logger.info("Chrome Killer script interrupted by user. Exiting.")
             break
 
 if __name__ == "__main__":
-    try:
-        logging.info("Starting chrome_killer script.")
-        chromeKiller()
-    except Exception as e:
-        logging.error(f"An error occurred in the main script: {e}")
+    chromeKiller()

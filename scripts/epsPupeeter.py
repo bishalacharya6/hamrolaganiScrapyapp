@@ -99,18 +99,13 @@ async def scrape_data():
     return final_data
 
 def insert_data_into_database(final_data):
-    db_host = os.getenv('MYSQL_HOST'),
-    db_user = os.getenv('MYSQL_USER'),
-    db_password = os.getenv('MYSQL_PASSWORD'),
-    db_name = os.getenv('MYSQL_DATABASE')
-
     # Connect to the database
     try:
         connection = mysql.connector.connect(
-            host=db_host,
-            user=db_user,
-            password=db_password,
-            database=db_name
+            host=os.getenv('MYSQL_HOST'),
+            user=os.getenv('MYSQL_USER'),
+            password=os.getenv('MYSQL_PASSWORD'),
+            database=os.getenv('MYSQL_DATABASE')
         )
         logger.info("Connection established.")
         cursor = connection.cursor()

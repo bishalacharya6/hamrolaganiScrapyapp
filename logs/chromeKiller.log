@@ -1,0 +1,231 @@
+2024-07-16 12:54:13,251 - INFO - Log File Set!
+2024-07-16 12:54:33,043 - INFO - Log File Set!
+2024-07-16 12:56:22,468 - INFO - Log File Set!
+2024-07-16 12:57:20,917 - INFO - Log File Set!
+2024-07-16 12:59:11,109 - INFO - Log File Set!
+2024-07-16 12:59:11,110 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-16 12:59:31,614 - INFO - Log File Set!
+2024-07-16 12:59:31,614 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-16 13:00:01,707 - INFO - Terminated Chrome process with PID: 196
+2024-07-16 13:00:01,708 - INFO - Terminated Chrome process with PID: 372
+2024-07-16 13:00:01,805 - INFO - Terminated Chrome process with PID: 924
+2024-07-16 13:00:01,963 - INFO - Terminated Chrome process with PID: 1432
+2024-07-16 13:00:02,138 - INFO - Terminated Chrome process with PID: 1700
+2024-07-16 13:00:02,411 - INFO - Terminated Chrome process with PID: 2648
+2024-07-16 13:00:02,583 - INFO - Terminated Chrome process with PID: 3048
+2024-07-16 13:00:02,584 - INFO - Terminated Chrome process with PID: 3056
+2024-07-16 13:00:02,864 - INFO - Terminated Chrome process with PID: 3844
+2024-07-16 13:00:02,864 - INFO - Terminated Chrome process with PID: 3884
+2024-07-16 13:00:02,887 - INFO - Terminated Chrome process with PID: 4064
+2024-07-16 13:00:02,944 - INFO - Terminated Chrome process with PID: 4304
+2024-07-16 13:00:03,002 - INFO - Terminated Chrome process with PID: 4584
+2024-07-16 13:00:03,398 - INFO - Terminated Chrome process with PID: 5304
+2024-07-16 13:00:03,417 - INFO - Terminated Chrome process with PID: 5360
+2024-07-16 13:00:03,514 - INFO - Terminated Chrome process with PID: 5484
+2024-07-16 13:00:03,563 - INFO - Terminated Chrome process with PID: 5604
+2024-07-16 13:00:03,564 - INFO - Terminated Chrome process with PID: 5764
+2024-07-16 13:00:03,703 - INFO - Terminated Chrome process with PID: 6332
+2024-07-16 13:00:03,704 - INFO - Terminated Chrome process with PID: 6400
+2024-07-16 13:00:03,840 - INFO - Terminated Chrome process with PID: 7376
+2024-07-16 13:00:03,886 - INFO - Terminated Chrome process with PID: 8304
+2024-07-16 13:00:03,973 - INFO - Terminated Chrome process with PID: 8448
+2024-07-16 13:00:03,995 - INFO - Terminated Chrome process with PID: 8760
+2024-07-16 13:00:04,116 - INFO - Terminated Chrome process with PID: 9220
+2024-07-16 13:00:04,165 - INFO - Terminated Chrome process with PID: 10120
+2024-07-16 13:00:04,194 - INFO - Terminated Chrome process with PID: 10484
+2024-07-16 13:00:04,252 - INFO - Terminated Chrome process with PID: 11112
+2024-07-16 13:00:04,255 - INFO - Terminated Chrome process with PID: 11208
+2024-07-16 13:00:04,327 - INFO - Terminated Chrome process with PID: 11240
+2024-07-16 13:00:04,329 - INFO - Terminated Chrome process with PID: 11284
+2024-07-16 13:00:04,330 - INFO - Terminated Chrome process with PID: 11632
+2024-07-16 13:00:04,331 - INFO - Terminated Chrome process with PID: 11640
+2024-07-16 13:00:04,332 - INFO - Terminated Chrome process with PID: 11748
+2024-07-16 13:00:04,382 - INFO - Terminated Chrome process with PID: 11812
+2024-07-16 13:00:04,412 - INFO - Terminated Chrome process with PID: 12580
+2024-07-16 13:00:04,413 - INFO - Terminated Chrome process with PID: 12636
+2024-07-16 13:00:04,563 - INFO - Terminated Chrome process with PID: 12980
+2024-07-16 13:00:04,715 - WARNING - Process 13316 no longer exists.
+2024-07-16 13:00:04,716 - INFO - Terminated Chrome process with PID: 13332
+2024-07-16 13:00:04,734 - INFO - Terminated Chrome process with PID: 13428
+2024-07-16 13:00:04,802 - INFO - Terminated Chrome process with PID: 14448
+2024-07-16 13:00:04,827 - INFO - Terminated Chrome process with PID: 14624
+2024-07-16 13:00:04,830 - INFO - Terminated Chrome process with PID: 14912
+2024-07-16 13:00:04,869 - INFO - Terminated Chrome process with PID: 17180
+2024-07-16 13:00:04,871 - INFO - Terminated Chrome process with PID: 17272
+2024-07-16 13:00:04,894 - INFO - Terminated Chrome process with PID: 18556
+2024-07-16 13:00:04,924 - INFO - Terminated Chrome process with PID: 19732
+2024-07-16 13:00:04,973 - INFO - Terminated Chrome process with PID: 19836
+2024-07-16 13:00:04,976 - INFO - Terminated Chrome process with PID: 19924
+2024-07-16 13:00:05,078 - INFO - Terminated Chrome process with PID: 20924
+2024-07-16 13:00:05,080 - INFO - Terminated Chrome process with PID: 21072
+2024-07-16 13:00:05,081 - INFO - Terminated Chrome process with PID: 21276
+2024-07-16 13:00:05,083 - INFO - Terminated Chrome process with PID: 21284
+2024-07-16 13:00:05,084 - INFO - Terminated Chrome process with PID: 21632
+2024-07-16 13:00:05,085 - INFO - Terminated Chrome process with PID: 21828
+2024-07-16 13:00:05,087 - INFO - Terminated Chrome process with PID: 21884
+2024-07-16 13:00:05,091 - INFO - Terminated Chrome process with PID: 21920
+2024-07-16 13:00:05,093 - INFO - Terminated Chrome process with PID: 22252
+2024-07-16 13:00:05,143 - INFO - Terminated Chrome process with PID: 22584
+2024-07-16 13:00:05,148 - INFO - Terminated Chrome process with PID: 22688
+2024-07-16 13:00:05,382 - INFO - Terminated Chrome process with PID: 23284
+2024-07-16 13:00:05,414 - INFO - Terminated Chrome process with PID: 23328
+2024-07-16 13:00:05,417 - INFO - Terminated Chrome process with PID: 23736
+2024-07-16 13:00:05,421 - INFO - Terminated Chrome process with PID: 23848
+2024-07-16 13:00:05,444 - INFO - Terminated Chrome process with PID: 24776
+2024-07-16 13:00:05,455 - INFO - Terminated Chrome process with PID: 25016
+2024-07-16 13:00:05,464 - INFO - Terminated Chrome process with PID: 25164
+2024-07-16 13:00:05,466 - INFO - Terminated Chrome process with PID: 25292
+2024-07-16 13:00:05,467 - INFO - Terminated Chrome process with PID: 25700
+2024-07-16 13:00:05,581 - INFO - Terminated Chrome process with PID: 26344
+2024-07-16 13:00:05,583 - INFO - Terminated Chrome process with PID: 26364
+2024-07-16 13:00:05,584 - INFO - Terminated Chrome process with PID: 26496
+2024-07-16 13:00:05,604 - INFO - Terminated Chrome process with PID: 26640
+2024-07-16 13:00:05,610 - INFO - Terminated Chrome process with PID: 26900
+2024-07-16 13:00:05,612 - INFO - Terminated Chrome process with PID: 26964
+2024-07-16 13:00:05,613 - INFO - Terminated Chrome process with PID: 27012
+2024-07-16 13:00:05,615 - INFO - Terminated Chrome process with PID: 27132
+2024-07-16 13:00:05,642 - INFO - Terminated Chrome process with PID: 27476
+2024-07-16 13:00:05,757 - WARNING - Process 27528 no longer exists.
+2024-07-16 13:00:05,876 - INFO - Terminated Chrome process with PID: 27544
+2024-07-16 13:00:05,985 - INFO - Terminated Chrome process with PID: 28020
+2024-07-16 13:00:06,060 - INFO - Terminated Chrome process with PID: 28616
+2024-07-16 13:00:06,061 - INFO - Terminated Chrome process with PID: 28684
+2024-07-16 13:00:06,063 - INFO - Terminated Chrome process with PID: 28704
+2024-07-16 13:00:06,078 - INFO - Terminated Chrome process with PID: 28880
+2024-07-16 13:00:06,080 - INFO - Terminated Chrome process with PID: 29380
+2024-07-16 13:00:06,129 - INFO - Terminated Chrome process with PID: 29860
+2024-07-16 13:00:06,132 - INFO - Terminated Chrome process with PID: 30128
+2024-07-16 13:00:06,137 - INFO - Terminated Chrome process with PID: 30176
+2024-07-16 13:00:06,142 - INFO - Terminated Chrome process with PID: 30300
+2024-07-16 13:00:06,143 - INFO - Terminated Chrome process with PID: 30304
+2024-07-16 13:00:06,145 - INFO - Terminated Chrome process with PID: 30808
+2024-07-16 13:00:06,146 - INFO - Terminated Chrome process with PID: 30972
+2024-07-16 13:00:06,174 - INFO - Terminated Chrome process with PID: 31188
+2024-07-16 13:00:06,176 - INFO - Terminated Chrome process with PID: 31348
+2024-07-16 13:00:06,179 - INFO - Terminated Chrome process with PID: 31756
+2024-07-16 13:00:06,181 - INFO - Terminated Chrome process with PID: 31848
+2024-07-16 13:00:06,182 - INFO - Terminated Chrome process with PID: 31916
+2024-07-16 13:00:06,184 - INFO - Terminated Chrome process with PID: 31952
+2024-07-16 13:00:06,185 - INFO - Terminated Chrome process with PID: 32012
+2024-07-16 13:00:06,187 - INFO - Terminated Chrome process with PID: 32068
+2024-07-16 13:00:06,190 - INFO - Terminated Chrome process with PID: 32116
+2024-07-16 13:00:06,191 - INFO - Terminated Chrome process with PID: 32160
+2024-07-16 13:00:06,197 - INFO - Terminated Chrome process with PID: 32772
+2024-07-16 13:00:06,200 - INFO - Terminated Chrome process with PID: 32788
+2024-07-16 13:00:06,202 - INFO - Terminated Chrome process with PID: 33248
+2024-07-16 13:00:06,205 - INFO - Terminated Chrome process with PID: 33348
+2024-07-16 13:00:06,208 - INFO - Terminated Chrome process with PID: 33356
+2024-07-16 13:00:06,210 - INFO - Terminated Chrome process with PID: 33368
+2024-07-16 13:00:06,213 - INFO - Terminated Chrome process with PID: 33504
+2024-07-16 13:00:06,216 - INFO - Terminated Chrome process with PID: 33520
+2024-07-16 13:00:06,217 - INFO - Terminated Chrome process with PID: 33568
+2024-07-16 13:00:06,218 - INFO - Terminated Chrome process with PID: 33936
+2024-07-16 13:00:06,220 - INFO - Terminated Chrome process with PID: 34104
+2024-07-16 13:00:06,343 - WARNING - Process 34160 no longer exists.
+2024-07-16 13:00:06,344 - INFO - Terminated Chrome process with PID: 34232
+2024-07-16 13:00:06,347 - INFO - Terminated Chrome process with PID: 34292
+2024-07-16 13:00:06,348 - INFO - Terminated Chrome process with PID: 34456
+2024-07-16 13:00:06,350 - INFO - Terminated Chrome process with PID: 34460
+2024-07-16 13:00:06,352 - INFO - Terminated Chrome process with PID: 34796
+2024-07-16 13:00:06,354 - INFO - Terminated Chrome process with PID: 35052
+2024-07-16 13:00:06,359 - INFO - Terminated Chrome process with PID: 35136
+2024-07-16 13:00:06,364 - INFO - Terminated Chrome process with PID: 35188
+2024-07-16 13:00:06,367 - INFO - Terminated Chrome process with PID: 35468
+2024-07-16 13:00:06,378 - INFO - Terminated Chrome process with PID: 35508
+2024-07-16 13:00:06,415 - INFO - Terminated Chrome process with PID: 35636
+2024-07-16 13:00:06,418 - INFO - Terminated Chrome process with PID: 35660
+2024-07-16 13:00:06,420 - INFO - Terminated Chrome process with PID: 35724
+2024-07-16 13:00:06,424 - INFO - Terminated Chrome process with PID: 35804
+2024-07-16 13:00:06,443 - INFO - Terminated Chrome process with PID: 35944
+2024-07-16 13:00:06,444 - INFO - Terminated Chrome process with PID: 36044
+2024-07-16 13:00:06,446 - INFO - Terminated Chrome process with PID: 36256
+2024-07-16 13:00:06,449 - INFO - Terminated Chrome process with PID: 36412
+2024-07-16 13:00:06,450 - INFO - Terminated Chrome process with PID: 36476
+2024-07-16 13:00:06,453 - INFO - Terminated Chrome process with PID: 36540
+2024-07-16 13:00:06,457 - INFO - Terminated Chrome process with PID: 36616
+2024-07-16 13:00:06,460 - INFO - Terminated Chrome process with PID: 36792
+2024-07-16 13:00:06,463 - INFO - Terminated Chrome process with PID: 36840
+2024-07-16 13:00:06,464 - INFO - Terminated Chrome process with PID: 37072
+2024-07-16 13:00:06,478 - INFO - Terminated Chrome process with PID: 37188
+2024-07-16 13:00:06,492 - INFO - Terminated Chrome process with PID: 37456
+2024-07-16 13:00:06,493 - INFO - Terminated Chrome process with PID: 37500
+2024-07-16 13:00:06,496 - INFO - Terminated Chrome process with PID: 37516
+2024-07-16 13:00:06,498 - INFO - Terminated Chrome process with PID: 37636
+2024-07-16 13:00:06,500 - INFO - Terminated Chrome process with PID: 37796
+2024-07-16 13:00:06,504 - INFO - Terminated Chrome process with PID: 37808
+2024-07-16 13:00:06,506 - INFO - Terminated Chrome process with PID: 37952
+2024-07-16 13:00:06,509 - INFO - Terminated Chrome process with PID: 38008
+2024-07-16 13:00:06,511 - INFO - Terminated Chrome process with PID: 38124
+2024-07-16 13:00:06,621 - INFO - Terminated Chrome process with PID: 38152
+2024-07-16 13:00:06,690 - INFO - Terminated Chrome process with PID: 38344
+2024-07-16 13:00:06,693 - INFO - Terminated Chrome process with PID: 38428
+2024-07-16 13:00:06,694 - INFO - Terminated Chrome process with PID: 38540
+2024-07-16 13:00:06,696 - INFO - Terminated Chrome process with PID: 38556
+2024-07-16 13:00:06,698 - INFO - Terminated Chrome process with PID: 38580
+2024-07-16 13:00:06,699 - INFO - Terminated Chrome process with PID: 38688
+2024-07-16 13:00:06,702 - INFO - Terminated Chrome process with PID: 38724
+2024-07-16 13:00:06,705 - INFO - Terminated Chrome process with PID: 38728
+2024-07-16 13:00:06,706 - INFO - Terminated Chrome process with PID: 39152
+2024-07-16 13:00:06,708 - INFO - Terminated Chrome process with PID: 39196
+2024-07-16 13:00:06,711 - INFO - Terminated Chrome process with PID: 39244
+2024-07-16 13:00:06,712 - INFO - Terminated Chrome process with PID: 39332
+2024-07-16 13:00:06,714 - INFO - Terminated Chrome process with PID: 39364
+2024-07-16 13:00:06,716 - INFO - Terminated Chrome process with PID: 39484
+2024-07-16 13:00:06,717 - INFO - Terminated Chrome process with PID: 39504
+2024-07-16 13:00:06,719 - INFO - Terminated Chrome process with PID: 39544
+2024-07-16 13:00:06,720 - INFO - Terminated Chrome process with PID: 39596
+2024-07-16 13:00:06,724 - INFO - Terminated Chrome process with PID: 39656
+2024-07-16 13:00:06,754 - INFO - Terminated Chrome process with PID: 40148
+2024-07-16 13:00:06,760 - INFO - Terminated Chrome process with PID: 40176
+2024-07-16 13:00:06,763 - INFO - Terminated Chrome process with PID: 40264
+2024-07-16 13:00:06,764 - INFO - Terminated Chrome process with PID: 40272
+2024-07-16 13:00:06,766 - INFO - Terminated Chrome process with PID: 40400
+2024-07-16 13:00:06,772 - INFO - Terminated Chrome process with PID: 40632
+2024-07-16 13:00:06,774 - INFO - Terminated Chrome process with PID: 40636
+2024-07-16 13:00:06,775 - INFO - Terminated Chrome process with PID: 40796
+2024-07-16 13:00:06,779 - INFO - Terminated Chrome process with PID: 40924
+2024-07-16 13:00:06,795 - INFO - Terminated Chrome process with PID: 41104
+2024-07-16 13:00:06,796 - INFO - Terminated Chrome process with PID: 41356
+2024-07-16 13:00:06,797 - INFO - Terminated Chrome process with PID: 41364
+2024-07-16 13:00:06,828 - INFO - Terminated Chrome process with PID: 41580
+2024-07-16 13:00:06,830 - INFO - Terminated Chrome process with PID: 41732
+2024-07-16 13:00:06,832 - INFO - Terminated Chrome process with PID: 41824
+2024-07-16 13:00:06,833 - INFO - Terminated Chrome process with PID: 41916
+2024-07-16 13:00:06,834 - INFO - Terminated Chrome process with PID: 42084
+2024-07-16 13:00:06,849 - INFO - Terminated Chrome process with PID: 42360
+2024-07-16 13:00:06,915 - WARNING - Process 42624 no longer exists.
+2024-07-16 13:00:06,985 - WARNING - Process 42956 no longer exists.
+2024-07-16 13:00:06,986 - INFO - Terminated Chrome process with PID: 43372
+2024-07-16 13:00:06,987 - INFO - Terminated Chrome process with PID: 43524
+2024-07-16 13:00:06,988 - INFO - Terminated Chrome process with PID: 43596
+2024-07-16 13:00:06,989 - INFO - Terminated Chrome process with PID: 44176
+2024-07-16 13:00:06,990 - INFO - Terminated Chrome process with PID: 44308
+2024-07-16 13:00:07,082 - WARNING - Process 45308 no longer exists.
+2024-07-16 13:00:07,084 - INFO - Terminated Chrome process with PID: 45524
+2024-07-16 13:00:07,086 - INFO - Terminated Chrome process with PID: 46136
+2024-07-16 13:00:07,145 - INFO - Terminated Chrome process with PID: 47152
+2024-07-16 13:00:07,164 - INFO - Terminated Chrome process with PID: 48368
+2024-07-16 13:00:07,215 - INFO - Terminated Chrome process with PID: 49272
+2024-07-16 13:00:07,216 - INFO - Terminated Chrome process with PID: 49812
+2024-07-16 13:00:07,217 - INFO - Terminated Chrome process with PID: 50304
+2024-07-16 13:00:07,228 - INFO - Terminated Chrome process with PID: 50556
+2024-07-16 13:00:07,230 - INFO - Terminated Chrome process with PID: 50876
+2024-07-16 13:00:07,232 - INFO - Terminated Chrome process with PID: 50888
+2024-07-16 13:00:07,233 - INFO - Terminated Chrome process with PID: 50996
+2024-07-16 13:00:07,236 - INFO - Terminated Chrome process with PID: 51136
+2024-07-16 13:00:07,237 - INFO - Terminated Chrome process with PID: 52244
+2024-07-16 13:00:07,251 - INFO - Terminated Chrome process with PID: 53168
+2024-07-16 13:00:07,253 - INFO - Terminated Chrome process with PID: 53276
+2024-07-16 13:00:07,265 - INFO - Terminated Chrome process with PID: 53568
+2024-07-16 13:00:07,311 - INFO - Terminated Chrome process with PID: 53796
+2024-07-16 13:00:07,373 - INFO - Terminated Chrome process with PID: 56892
+2024-07-16 13:00:07,380 - INFO - Total Chrome processes terminated: 207
+2024-07-16 13:01:05,419 - INFO - Log File Set!
+2024-07-16 13:01:05,420 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-16 13:01:05,420 - INFO - Scheduler Running.
+2024-07-16 13:01:13,091 - INFO - Log File Set!
+2024-07-16 13:01:13,091 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-16 13:01:13,091 - INFO - Scheduler Running.
+2024-07-16 13:01:43,092 - INFO - Scheduler Running.
+2024-07-16 13:02:13,093 - INFO - Scheduler Running.
+2024-07-16 13:02:14,138 - INFO - No Chrome processes found to terminate.

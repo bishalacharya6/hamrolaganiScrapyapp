@@ -270,7 +270,7 @@ def LiveStockPrices():
                 current_time = datetime.now().time()
                 current_day = datetime.now().weekday()
 
-                if current_day in [6, 0, 1, 2, 3, 4]:
+                if current_day in [6, 0, 1, 2, 3]:
                     logger.info(f"Current time is {current_time}. Running scheduled jobs.")
                     schedule.run_pending()
 

@@ -4,8 +4,7 @@ from flask import Flask, render_template, request
 from concurrent.futures import ProcessPoolExecutor
 from flask.logging import default_handler
 
-from scripts import chromeKiller
-from scripts.nepseAnnouncement import announcements
+
 
 # Append the parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '', '..')))
@@ -18,6 +17,8 @@ from scripts.epsPupeeter import eps
 from scripts.funcDivident import dividend
 from scripts.StockLive import LiveStockPrices
 from scripts.nepseFloorsheet import dailyFloorsheet
+from scripts.chromeKiller import chromeKiller
+from scripts.nepseAnnouncement import announcements
 
 
 

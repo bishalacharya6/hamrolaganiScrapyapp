@@ -164,19 +164,14 @@ async def scrape_website():
 
 
 def insert_data_into_database(final_data):
-    db_host = os.getenv('MYSQL_HOST'),
-    db_user = os.getenv('MYSQL_USER'),
-    db_password = os.getenv('MYSQL_PASSWORD'),
-    db_name = os.getenv('MYSQL_DATABASE')
-
 
     try:
         # Connect to the database
         connection = mysql.connector.connect(
-            host=db_host,
-            user=db_user,
-            password=db_password,
-            database=db_name
+            host=os.getenv('MYSQL_HOST'),
+            user=os.getenv('MYSQL_USER'),
+            password=os.getenv('MYSQL_PASSWORD'),
+            database=os.getenv('MYSQL_DATABASE')
         )
         logger.info("Connection established.")
         cursor = connection.cursor()
@@ -240,7 +235,7 @@ def job():
     logger.info(f"Market live status: {'True' if is_live else 'False'}, Current time: {current_time}\n")
 
     # Run the scraper if the market is live or if it's between 3:01 PM and 3:05 PM
-    if is_live or (dt_time(15, 1) <= current_time < market_close_time):
+    if is_live or (dt_time(10, 1) <= current_time < market_close_time):
         logger.info("Starting the scraping process...")
         try:
             try:
@@ -267,7 +262,7 @@ def live_indexes():
     while True:
         try:
             logger.info("Initializing schedule_jobs for Live Indexes...")
-            start_time = dt_time(11, 00)
+            start_time = dt_time(10, 00)
             end_time = dt_time(15, 5)
 
             schedule.every(0.5).minutes.do(job)
