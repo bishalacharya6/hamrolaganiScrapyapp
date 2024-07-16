@@ -40,7 +40,7 @@ def chromeKiller():
     except Exception as e:
         logging.error(f"An error occurred while killing Chrome processes: {e}")
 
-def schedule_chromeKiller():
+def chromeKiller():
     """
     Schedules the chromeKiller function to run every day at 10 PM.
     """
@@ -64,6 +64,6 @@ def schedule_chromeKiller():
 if __name__ == "__main__":
     try:
         logging.info("Starting chrome_killer script.")
-        schedule_chromeKiller()
+        chromeKiller()
     except Exception as e:
         logging.error(f"An error occurred in the main script: {e}")

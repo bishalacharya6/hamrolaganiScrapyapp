@@ -4,6 +4,8 @@ from flask import Flask, render_template, request
 from concurrent.futures import ProcessPoolExecutor
 from flask.logging import default_handler
 
+from scripts.nepseAnnouncement import announcements
+
 # Append the parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '', '..')))
 from log import configure_logging
@@ -15,6 +17,7 @@ from scripts.epsPupeeter import eps
 from scripts.funcDivident import dividend
 from scripts.StockLive import LiveStockPrices
 from scripts.nepseFloorsheet import dailyFloorsheet
+
 
 
 # Ensure the logs directory exists
@@ -55,6 +58,8 @@ def show_logs():
         log_content = live_stock_status()
     elif log_type == 'floorsheet':
         log_content = floorsheet_status()
+    elif log_type == 'announcement':
+        log_content = announcement_status()
     else:
         log_content = "Select a log type above."
     return render_template('home.html', log_content=log_content)
@@ -78,6 +83,9 @@ def live_stock_status():
 def floorsheet_status():
     return read_log_file('floorsheet.log')
 
+def announcement_status():
+    return read_log_file('announcement.log')
+
 
 def read_log_file(file_name):
     file_path = os.path.join(logs_dir, file_name)
@@ -99,7 +107,7 @@ def run_script(script):
 if __name__ == "__main__":
 
     # <--- Available Scripts  --->
-    scripts = [marketStatus, live_indexes, eps, dividend, LiveStockPrices, dailyFloorsheet]
+    scripts = [marketStatus, live_indexes, eps, dividend, LiveStockPrices, dailyFloorsheet, announcements]
 
 
     # Create a ProcessPoolExecutor within the main block

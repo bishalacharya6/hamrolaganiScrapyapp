@@ -11,7 +11,7 @@ from mysql.connector import errorcode
 from dotenv import load_dotenv
 import time
 import logging
-from scripts.marketcheck import scrape_market_status
+from marketcheck import scrape_market_status
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.', '..')))
 from browser.broswerFunc import close_browser, create_browser
 
@@ -58,6 +58,11 @@ async def scrape_website():
 
         extracted_data = []
 
+        date_xpath = '//*[@id="dDate"]'
+        date_element = await page.waitForXPath(date_xpath)
+        updated_date = await page.evaluate('(element) => element.textContent', date_element)
+
+
         for name in index_names:
             try:
                 parent_container_xpath = '/html/body/div[2]/div/section[2]/div[3]/div/div/div/div/div[1]/div[3]/div[1]/div/div/div/div[1]/div'
@@ -88,14 +93,16 @@ async def scrape_website():
                     index_value_cleaned = float(index_value.replace(',', '')) if index_value else 0.0
                     percentage_change_cleaned = float(percentage_change.replace('%', '')) if percentage_change else 0.0
 
+
                     extracted_data.append({
                         'index_name': name,
                         'turnover': turnover_cleaned,
                         'last_trading_index': index_value_cleaned,
-                        'percentage_change': percentage_change_cleaned
+                        'percentage_change': percentage_change_cleaned,
+                        'date': updated_date
                     })
 
-                    logger.debug(f"Index Name: {name}, Turnover: {turnover_cleaned}, Last Trading Index: {index_value_cleaned}, Percentage Change: {percentage_change_cleaned}")
+                    logger.info(f"Index Name: {name}, Turnover: {turnover_cleaned}, Last Trading Index: {index_value_cleaned}, Percentage Change: {percentage_change_cleaned}")
                     break
 
                 if not found_matching_element:
@@ -131,10 +138,11 @@ async def scrape_website():
                                 'index_name': name,
                                 'turnover': turnover_cleaned,
                                 'last_trading_index': index_value_cleaned,
-                                'percentage_change': percentage_change_cleaned
+                                'percentage_change': percentage_change_cleaned,
+                                'date': updated_date
                             })
 
-                            logger.debug(f"Index Name: {name}, Turnover: {turnover_cleaned}, Last Trading Index: {index_value_cleaned}, Percentage Change: {percentage_change_cleaned}")
+                            logger.info(f"Index Name: {name}, Turnover: {turnover_cleaned}, Last Trading Index: {index_value_cleaned}, Percentage Change: {percentage_change_cleaned}")
                             break
 
                         if found_matching_element:
@@ -156,10 +164,11 @@ async def scrape_website():
 
 
 def insert_data_into_database(final_data):
-    db_host = os.getenv('DB_HOST')
-    db_user = os.getenv('DB_USER')
-    db_password = os.getenv('DB_PASSWORD')
-    db_name = os.getenv('DB_NAME')
+    db_host = os.getenv('MYSQL_HOST'),
+    db_user = os.getenv('MYSQL_USER'),
+    db_password = os.getenv('MYSQL_PASSWORD'),
+    db_name = os.getenv('MYSQL_DATABASE')
+
 
     try:
         # Connect to the database
@@ -195,11 +204,12 @@ def insert_data_into_database(final_data):
             turnover = row['turnover']
             lastTradingPrice = row['last_trading_index']
             percentChange = row['percentage_change']
+            updated_at = row['date']
             
             index_id = index_dict.get(indexName)
             if index_id is not None:
                 now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                values = (index_id, lastTradingPrice, percentChange, now, now, turnover)
+                values = (index_id, lastTradingPrice, percentChange, now, updated_at, turnover)
                 cursor.execute(sql, values)
 
         # Commit the transaction

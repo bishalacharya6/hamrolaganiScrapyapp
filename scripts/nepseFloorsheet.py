@@ -116,8 +116,6 @@ async def scrapy_extraction():
 
         try:
             while True:
-                if page_num == 6:
-                    break
                 logger.info(f"Extracting data from page {page_num}...")
                 rows_xpath = '/html/body/app-root/div/main/div/app-floor-sheet/div/div[4]/table/tbody/tr'
                 rows_elements = await page.xpath(rows_xpath)
@@ -150,7 +148,7 @@ async def scrapy_extraction():
                     await next_button[0].click()
                     await asyncio.sleep(2)
                     page_num += 1
-                    
+
                 else:
                     logger.info("Next button not found. Stopping extraction.")
                     break
@@ -177,10 +175,10 @@ def insert_data_to_database(final_data):
     
     try:
         connection = mysql.connector.connect(
-            host=os.getenv('DB_HOST'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASSWORD'),
-            database=os.getenv('DB_NAME')
+            host=os.getenv('MYSQL_HOST'),
+            user=os.getenv('MYSQL_USER'),
+            password=os.getenv('MYSQL_PASSWORD'),
+            database=os.getenv('MYSQL_DATABASE')
         )
         logger.info("Database connection established.")
         
@@ -256,13 +254,13 @@ def dailyFloorsheet():
         try:
             logger.info("Initializing schedule_jobs...")
             # Schedule the job to run at 11:20 AM every day
-            schedule.every().day.at("15:04").do(job)
+            schedule.every().day.at("15:20").do(job)
             logger.info("Job scheduled successfully.")
 
             while True:
                 current_day = datetime.now().weekday()
 
-                if current_day in [6, 0, 1, 2, 3, 4]:  # Sunday to Thursday
+                if current_day in [6, 0, 1, 2, 3]:  # Sunday to Thursday
                     schedule.run_pending()
                 time.sleep(5) 
 

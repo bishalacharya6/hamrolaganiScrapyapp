@@ -37,10 +37,10 @@ def dividend_data_to_database(final_data):
     
     try:
         connection = mysql.connector.connect(
-            host=os.getenv('DB_HOST'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASSWORD'),
-            database=os.getenv('DB_NAME')
+            host = os.getenv('MYSQL_HOST'),
+            user = os.getenv('MYSQL_USER'),
+            password = os.getenv('MYSQL_PASSWORD'),
+            name = os.getenv('MYSQL_DATABASE')
         )
         logger.info("Database connection established.")
         
@@ -280,7 +280,7 @@ def dividend():
         try:
             logger.info("Initializing schedule_jobs for Dividend...")
             # Schedule the job to run at 11:20 AM every day
-            schedule.every().day.at("12:31").do(job)
+            schedule.every().day.at("12:30").do(job)
             logger.info("Job scheduled successfully For Dividend.")
 
             while True:

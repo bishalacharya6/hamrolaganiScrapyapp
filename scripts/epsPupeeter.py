@@ -99,10 +99,10 @@ async def scrape_data():
     return final_data
 
 def insert_data_into_database(final_data):
-    db_host = os.getenv('DB_HOST')
-    db_user = os.getenv('DB_USER')
-    db_password = os.getenv('DB_PASSWORD')
-    db_name = os.getenv('DB_NAME')
+    db_host = os.getenv('MYSQL_HOST'),
+    db_user = os.getenv('MYSQL_USER'),
+    db_password = os.getenv('MYSQL_PASSWORD'),
+    db_name = os.getenv('MYSQL_DATABASE')
 
     # Connect to the database
     try:
@@ -185,9 +185,9 @@ def eps():
         try:
             logger.info("Initializing schedule_jobs...")
             # Schedule the job to run at 11:20 AM every day
-            schedule.every().day.at("11:13").do(job)
-            schedule.every().day.at("11:15").do(job)
-            schedule.every().day.at("11:20").do(job)
+            schedule.every().day.at("15:00").do(job)
+            schedule.every().day.at("15:01").do(job)
+            schedule.every().day.at("15:10").do(job)
             logger.info("Job scheduled successfully.")
 
             while True:

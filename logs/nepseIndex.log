@@ -1,2 +1,131 @@
 2024-07-12 16:38:28,499 - INFO - Initializing schedule_jobs for Live Indexes...
 2024-07-12 16:38:28,500 - INFO - Job scheduled successfully.
+2024-07-16 10:25:59,488 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 10:25:59,490 - INFO - Job scheduled successfully.
+2024-07-16 10:25:59,490 - INFO - Current time is 10:25:59.490436. Running scheduled jobs.
+2024-07-16 10:26:09,491 - INFO - Current time is 10:26:09.491613. Running scheduled jobs.
+2024-07-16 10:26:19,493 - INFO - Current time is 10:26:19.493187. Running scheduled jobs.
+2024-07-16 10:26:29,494 - INFO - Current time is 10:26:29.494392. Running scheduled jobs.
+2024-07-16 10:26:46,681 - INFO - Market live status: False, Current time: 10:26:29.494392
+
+2024-07-16 10:26:46,682 - INFO - Starting the scraping process...
+2024-07-16 10:26:46,683 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:27:07,275 - INFO - Closed the browser.
+2024-07-16 10:27:07,276 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:27:07,276 - INFO - Scraping process completed.
+2024-07-16 10:27:07,276 - INFO - Inserting data into the database...
+2024-07-16 10:27:07,437 - INFO - Connection established.
+2024-07-16 10:27:07,444 - INFO - Closed the database connection.
+2024-07-16 10:27:07,445 - ERROR - An error occurred during the scraping process in Job Function: 'index_name'
+2024-07-16 10:27:17,445 - INFO - Current time is 10:27:17.445758. Running scheduled jobs.
+2024-07-16 10:27:27,449 - INFO - Current time is 10:27:27.447400. Running scheduled jobs.
+2024-07-16 10:27:37,451 - INFO - Current time is 10:27:37.451571. Running scheduled jobs.
+2024-07-16 10:27:46,310 - INFO - Market live status: False, Current time: 10:27:37.451571
+
+2024-07-16 10:27:46,311 - INFO - Starting the scraping process...
+2024-07-16 10:27:46,313 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:28:01,369 - INFO - Closed the browser.
+2024-07-16 10:28:01,370 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:28:01,371 - INFO - Scraping process completed.
+2024-07-16 10:28:01,372 - INFO - Inserting data into the database...
+2024-07-16 10:28:01,386 - INFO - Connection established.
+2024-07-16 10:28:01,390 - INFO - Closed the database connection.
+2024-07-16 10:28:01,391 - ERROR - An error occurred during the scraping process in Job Function: 'index_name'
+2024-07-16 10:28:11,392 - INFO - Current time is 10:28:11.392857. Running scheduled jobs.
+2024-07-16 10:28:21,394 - INFO - Current time is 10:28:21.394172. Running scheduled jobs.
+2024-07-16 10:28:31,395 - INFO - Current time is 10:28:31.395886. Running scheduled jobs.
+2024-07-16 10:28:40,121 - INFO - Market live status: False, Current time: 10:28:31.395886
+
+2024-07-16 10:28:40,121 - INFO - Starting the scraping process...
+2024-07-16 10:28:40,123 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:28:57,980 - INFO - Closed the browser.
+2024-07-16 10:28:57,981 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:28:57,981 - INFO - Scraping process completed.
+2024-07-16 10:28:57,982 - INFO - Inserting data into the database...
+2024-07-16 10:28:57,999 - INFO - Connection established.
+2024-07-16 10:28:58,002 - INFO - Closed the database connection.
+2024-07-16 10:28:58,003 - ERROR - An error occurred during the scraping process in Job Function: 'index_name'
+2024-07-16 10:31:25,316 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 10:31:25,317 - INFO - Job scheduled successfully.
+2024-07-16 10:31:25,317 - INFO - Current time is 10:31:25.317645. Running scheduled jobs.
+2024-07-16 10:31:35,319 - INFO - Current time is 10:31:35.319195. Running scheduled jobs.
+2024-07-16 10:31:45,320 - INFO - Current time is 10:31:45.320397. Running scheduled jobs.
+2024-07-16 10:31:55,321 - INFO - Current time is 10:31:55.321301. Running scheduled jobs.
+2024-07-16 10:32:20,059 - INFO - Market live status: False, Current time: 10:31:55.321301
+
+2024-07-16 10:32:20,059 - INFO - Starting the scraping process...
+2024-07-16 10:32:20,061 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:32:47,146 - INFO - Closed the browser.
+2024-07-16 10:32:47,147 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:32:47,147 - INFO - Scraping process completed.
+2024-07-16 10:32:47,147 - INFO - Inserting data into the database...
+2024-07-16 10:32:47,271 - INFO - Connection established.
+2024-07-16 10:32:47,274 - INFO - Closed the database connection.
+2024-07-16 10:32:47,276 - ERROR - An error occurred during the scraping process in Job Function: 'index_name'
+2024-07-16 10:32:57,277 - INFO - Current time is 10:32:57.277980. Running scheduled jobs.
+2024-07-16 10:33:07,279 - INFO - Current time is 10:33:07.279173. Running scheduled jobs.
+2024-07-16 10:33:17,282 - INFO - Current time is 10:33:17.282519. Running scheduled jobs.
+2024-07-16 10:35:33,082 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 10:35:33,082 - INFO - Job scheduled successfully.
+2024-07-16 10:35:33,082 - INFO - Current time is 10:35:33.082308. Running scheduled jobs.
+2024-07-16 10:35:43,083 - INFO - Current time is 10:35:43.083832. Running scheduled jobs.
+2024-07-16 10:35:53,085 - INFO - Current time is 10:35:53.085443. Running scheduled jobs.
+2024-07-16 10:36:03,087 - INFO - Current time is 10:36:03.087586. Running scheduled jobs.
+2024-07-16 10:36:13,008 - INFO - Market live status: False, Current time: 10:36:03.087586
+
+2024-07-16 10:36:13,008 - INFO - Starting the scraping process...
+2024-07-16 10:36:13,010 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:36:36,350 - INFO - Closed the browser.
+2024-07-16 10:36:36,365 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:36:36,381 - INFO - Scraping process completed.
+2024-07-16 10:36:36,382 - INFO - Inserting data into the database...
+2024-07-16 10:36:36,509 - INFO - Connection established.
+2024-07-16 10:36:36,534 - INFO - Data committed to the database.
+2024-07-16 10:36:36,535 - INFO - Closed the database connection.
+2024-07-16 10:36:36,536 - INFO - Data insertion completed. 
+
+
+2024-07-16 10:36:46,538 - INFO - Current time is 10:36:46.538223. Running scheduled jobs.
+2024-07-16 10:36:56,539 - INFO - Current time is 10:36:56.539515. Running scheduled jobs.
+2024-07-16 10:37:06,541 - INFO - Current time is 10:37:06.541580. Running scheduled jobs.
+2024-07-16 10:37:16,239 - INFO - Market live status: False, Current time: 10:37:06.541580
+
+2024-07-16 10:37:16,240 - INFO - Starting the scraping process...
+2024-07-16 10:37:16,243 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 10:37:40,448 - INFO - Closed the browser.
+2024-07-16 10:37:40,449 - INFO - Data Extracted, Moving to Database
+2024-07-16 10:37:40,450 - INFO - Scraping process completed.
+2024-07-16 10:37:40,450 - INFO - Inserting data into the database...
+2024-07-16 10:37:40,466 - INFO - Connection established.
+2024-07-16 10:37:40,479 - INFO - Data committed to the database.
+2024-07-16 10:37:40,480 - INFO - Closed the database connection.
+2024-07-16 10:37:40,481 - INFO - Data insertion completed. 
+
+
+2024-07-16 10:37:50,484 - INFO - Current time is 10:37:50.484278. Running scheduled jobs.
+2024-07-16 10:38:00,485 - INFO - Current time is 10:38:00.485607. Running scheduled jobs.
+2024-07-16 10:38:10,487 - INFO - Current time is 10:38:10.487842. Running scheduled jobs.
+2024-07-16 10:38:20,481 - ERROR - An unexpected error occurred in schedule_jobs: This event loop is already running
+2024-07-16 10:38:20,482 - INFO - Attempting to restart schedule_jobs after a brief pause...
+2024-07-16 11:40:04,012 - INFO - Initializing schedule_jobs for Live Indexes...
+2024-07-16 11:40:04,014 - INFO - Job scheduled successfully.
+2024-07-16 11:40:04,014 - INFO - Current time is 11:40:04.014905. Running scheduled jobs.
+2024-07-16 11:40:14,016 - INFO - Current time is 11:40:14.016713. Running scheduled jobs.
+2024-07-16 11:40:24,018 - INFO - Current time is 11:40:24.018005. Running scheduled jobs.
+2024-07-16 11:40:34,018 - INFO - Current time is 11:40:34.018700. Running scheduled jobs.
+2024-07-16 11:40:55,569 - INFO - Market live status: True, Current time: 11:40:34.018700
+
+2024-07-16 11:40:55,569 - INFO - Starting the scraping process...
+2024-07-16 11:40:55,571 - INFO - Setting up the Pyppeteer Browser...
+2024-07-16 11:41:09,047 - INFO - Closed the browser.
+2024-07-16 11:41:09,048 - INFO - Data Extracted, Moving to Database
+2024-07-16 11:41:09,048 - INFO - Scraping process completed.
+2024-07-16 11:41:09,048 - INFO - Inserting data into the database...
+2024-07-16 11:41:09,262 - INFO - Connection established.
+2024-07-16 11:41:09,284 - INFO - Data committed to the database.
+2024-07-16 11:41:09,285 - INFO - Closed the database connection.
+2024-07-16 11:41:09,286 - INFO - Data insertion completed. 
+
+
+2024-07-16 11:41:19,289 - INFO - Current time is 11:41:19.289555. Running scheduled jobs.
+2024-07-16 11:41:29,290 - INFO - Current time is 11:41:29.290511. Running scheduled jobs.
