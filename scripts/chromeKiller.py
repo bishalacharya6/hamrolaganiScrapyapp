@@ -52,7 +52,7 @@ def chromeKiller():
     """
     while True:
         try:
-            schedule.every().day.at("13:02").do(kill)
+            schedule.every().day.at("22:00").do(kill)
             logger.info("Scheduled chromeKiller to run every day at 12:58.")
 
             while True:
@@ -67,4 +67,4 @@ def chromeKiller():
             break
 
 if __name__ == "__main__":
-    kill()
+    chromeKiller()

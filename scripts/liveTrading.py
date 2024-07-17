@@ -241,7 +241,7 @@ def live_stock():
         try:
             logger.info("Initializing schedule_jobs for Live Indexes...")
             start_time = dt_time(11, 00)
-            end_time = dt_time(15, 5)
+            end_time = dt_time(15, 2)
 
             schedule.every(1).minutes.do(job)
             logger.info("Job scheduled successfully.")

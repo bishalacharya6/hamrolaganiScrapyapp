@@ -254,7 +254,7 @@ def dailyFloorsheet():
         try:
             logger.info("Initializing schedule_jobs...")
             # Schedule the job to run at 11:20 AM every day
-            schedule.every().day.at("16:17").do(job)
+            schedule.every().day.at("15:30").do(job)
             logger.info("Job scheduled successfully.")
 
             while True:
