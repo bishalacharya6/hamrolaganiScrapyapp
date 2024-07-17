@@ -24,10 +24,10 @@ url = "https://www.nepalstock.com.np/live-market"
 
 # Configure logging
 try:
-    logger, _ = configure_logging("stockLive.log", "live_stock")
-    print(f"Index Log File Set!")
-except:
-    print(f"Logger Setting Error")
+    logger = configure_logging("liveTrading.log")
+    print(f"Log File Set!")
+except Exception as e:
+    print(f"Logger Setting Error: {e}")
 
 async def live_market():
     browser = None
@@ -54,18 +54,12 @@ async def live_market():
         
         logger.info(f"Headers extracted: {headers}")
 
+        data_size = []
+
+        break_time = dt_time(15, 1)
+
         while True:
             logger.info("Extracting rows...")
-            try:
-                xpath_for_table = "/html/body/app-root/div/main/div/app-live-market/div/div/div[5]/table/tbody"
-                # Reduce timeout to detect market closure faster
-                await page.waitForXPath(xpath_for_table, timeout=30000)  # 30 seconds timeout
-            except TimeoutError:
-                logger.warning("No Data Found, Market closed or page expired!")
-                break
-            except Exception as e:
-                logger.error(f"An unexpected error occurred while waiting for table: {e}")
-                break
 
             try:
                 rows_xpath = '/html/body/app-root/div/main/div/app-live-market/div/div/div[5]/table/tbody/tr'
@@ -79,13 +73,27 @@ async def live_market():
                         cell_text = await page.evaluate('(element) => element.innerText', cell)
                         cell_text = cell_text.replace(',', '').strip()
                         row_data[headers[i]] = cell_text
-                    new_data.append(row_data)
-                logger.info(f"Extracted {len(new_data)} rows of data.")
-                print(new_data)
-                insert_data_into_database(new_data)
+                    
+                    if row_data not in data_size:
+                        new_data.append(row_data)
+                        data_size.append(row_data)
+                
+                logger.info(f"Extracted {len(new_data)} new rows of data.")
 
-                # Add a short delay to avoid overwhelming the server
-                time.sleep(20)
+                if new_data:
+                    insert_data_into_database(new_data)
+
+                # Limit the size of data_size to 4000 by removing oldest entries
+                if len(data_size) > 4000:
+                    data_size = data_size[-2000:]
+
+                # Check if it's time to break the loop
+                current_time = datetime.now().time()
+                if current_time >= break_time:
+                    logger.info(f"Reached break time ({break_time}). Exiting loop.")
+                    break
+            
+                time.sleep(10)
 
             except Exception as e:
                 logger.error(f"Error extracting data: {e}")
@@ -209,7 +217,7 @@ def job():
     logger.info(f"Market live status: {'True' if is_live else 'False'}, Current time: {current_time}")
 
     # Run the scraper if the market is live or if it's between 3:01 PM and 3:05 PM
-    if is_live or (dt_time(15, 1) <= current_time < market_close_time):
+    if is_live or (dt_time(13, 1) <= current_time < market_close_time):
         logger.info("Starting the scraping process...")
         try:
             try:

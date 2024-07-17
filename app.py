@@ -15,7 +15,6 @@ from scripts.openClose import marketStatus
 from scripts.live_nepse_data_scrapper import live_indexes
 from scripts.epsPupeeter import eps
 from scripts.funcDivident import dividend
-from scripts.StockLive import LiveStockPrices
 from scripts.nepseFloorsheet import dailyFloorsheet
 from scripts.chromeKiller import chromeKiller
 from scripts.nepseAnnouncement import announcements
