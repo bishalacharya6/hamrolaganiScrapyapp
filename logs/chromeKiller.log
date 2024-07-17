@@ -359,3 +359,35 @@
 2024-07-17 14:44:07,046 - INFO - Terminated Chrome process with PID: 38164
 2024-07-17 14:44:07,063 - INFO - Terminated Chrome process with PID: 38612
 2024-07-17 14:44:07,097 - INFO - Total Chrome processes terminated: 122
+2024-07-17 16:25:50,269 - INFO - Log File Set!
+2024-07-17 16:26:16,497 - INFO - Log File Set!
+2024-07-17 16:26:18,265 - INFO - Log File Set!
+2024-07-17 16:26:18,290 - INFO - Log File Set!
+2024-07-17 16:26:18,297 - INFO - Log File Set!
+2024-07-17 16:26:18,300 - INFO - Log File Set!
+2024-07-17 16:26:18,312 - INFO - Log File Set!
+2024-07-17 16:26:18,316 - INFO - Log File Set!
+2024-07-17 16:26:18,325 - INFO - Log File Set!
+2024-07-17 16:26:18,379 - INFO - Log File Set!
+2024-07-17 16:26:18,872 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-17 16:26:18,873 - INFO - Scheduler Running.
+2024-07-17 16:26:48,874 - INFO - Scheduler Running.
+2024-07-17 16:27:18,876 - INFO - Scheduler Running.
+2024-07-17 16:27:48,877 - INFO - Scheduler Running.
+2024-07-17 16:28:06,886 - INFO - Chrome Killer script interrupted by user. Exiting.
+2024-07-17 16:28:09,816 - INFO - Log File Set!
+2024-07-17 16:28:11,665 - INFO - Log File Set!
+2024-07-17 16:28:11,681 - INFO - Log File Set!
+2024-07-17 16:28:11,683 - INFO - Log File Set!
+2024-07-17 16:28:11,692 - INFO - Log File Set!
+2024-07-17 16:28:11,709 - INFO - Log File Set!
+2024-07-17 16:28:11,721 - INFO - Log File Set!
+2024-07-17 16:28:11,728 - INFO - Log File Set!
+2024-07-17 16:28:11,764 - INFO - Log File Set!
+2024-07-17 16:28:12,475 - INFO - Scheduled chromeKiller to run every day at 12:58.
+2024-07-17 16:28:12,476 - INFO - Scheduler Running.
+2024-07-17 16:28:42,477 - INFO - Scheduler Running.
+2024-07-17 16:29:12,478 - INFO - Scheduler Running.
+2024-07-17 16:29:42,479 - INFO - Scheduler Running.
+2024-07-17 16:30:12,481 - INFO - Scheduler Running.
+2024-07-17 16:30:42,483 - INFO - Scheduler Running.

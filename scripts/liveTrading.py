@@ -11,9 +11,9 @@ import time
 from mysql.connector import errorcode
 import mysql.connector
 from dotenv import load_dotenv
+from .marketcheck import scrape_market_status
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.', '..')))
-from marketcheck import scrape_market_status
 from browser.broswerFunc import close_browser, create_browser
 from log import configure_logging
 
@@ -24,10 +24,11 @@ url = "https://www.nepalstock.com.np/live-market"
 
 # Configure logging
 try:
-    logger = configure_logging("liveTrading.log")
+    logger, _ = configure_logging("liveTrading.log", "live_stock")
     print(f"Log File Set!")
 except Exception as e:
     print(f"Logger Setting Error: {e}")
+
 
 async def live_market():
     browser = None

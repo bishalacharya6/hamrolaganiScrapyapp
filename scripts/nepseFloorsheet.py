@@ -24,6 +24,7 @@ except Exception as e:
 
 load_dotenv()
 
+
 url = "https://www.nepalstock.com.np/floor-sheet"
 
 async def scrapy_extraction():
@@ -143,12 +144,11 @@ async def scrapy_extraction():
                     if "disabled" in class_value:
                         logger.info("Reached the last page. Stopping extraction.")
                         break
-
+                    
                     logger.info("Clicking next page button...")
                     await next_button[0].click()
                     await asyncio.sleep(2)
                     page_num += 1
-
                 else:
                     logger.info("Next button not found. Stopping extraction.")
                     break
@@ -254,7 +254,7 @@ def dailyFloorsheet():
         try:
             logger.info("Initializing schedule_jobs...")
             # Schedule the job to run at 11:20 AM every day
-            schedule.every().day.at("15:20").do(job)
+            schedule.every().day.at("16:17").do(job)
             logger.info("Job scheduled successfully.")
 
             while True:
@@ -274,3 +274,4 @@ def dailyFloorsheet():
 
 if __name__ == "__main__":
     dailyFloorsheet()
+

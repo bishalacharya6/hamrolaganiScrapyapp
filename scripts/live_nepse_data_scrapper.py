@@ -10,15 +10,13 @@ import mysql.connector
 from mysql.connector import errorcode
 from dotenv import load_dotenv
 import time
-import logging
-from marketcheck import scrape_market_status
+from .marketcheck import scrape_market_status
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.', '..')))
 from browser.broswerFunc import close_browser, create_browser
-
-
-#Log File Set
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.', '..')))
 from log import configure_logging
+
+
 
 try:
     logger, _ = configure_logging("nepseIndex.log", "live_Indexes")
