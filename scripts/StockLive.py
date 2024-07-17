@@ -263,7 +263,7 @@ def LiveStockPrices():
     while True:
         try:
             logger.info("Initializing schedule_jobs...")
-            schedule.every().day.at("14:10").do(job)
+            schedule.every().day.at("11:00").do(job)
             logger.info("Job scheduled successfully.")
 
             while True:

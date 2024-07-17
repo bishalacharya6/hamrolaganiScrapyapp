@@ -203,8 +203,7 @@ def insert_data_into_database(final_data):
             
             index_id = index_dict.get(indexName)
             if index_id is not None:
-                now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                values = (index_id, lastTradingPrice, percentChange, now, updated_at, turnover)
+                values = (index_id, lastTradingPrice, percentChange, updated_at, updated_at, turnover)
                 cursor.execute(sql, values)
 
         # Commit the transaction

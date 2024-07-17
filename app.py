@@ -19,6 +19,7 @@ from scripts.StockLive import LiveStockPrices
 from scripts.nepseFloorsheet import dailyFloorsheet
 from scripts.chromeKiller import chromeKiller
 from scripts.nepseAnnouncement import announcements
+from scripts.liveTrading import live_stock
 
 
 
@@ -114,7 +115,7 @@ def run_script(script):
 if __name__ == "__main__":
 
     # <--- Available Scripts  --->
-    scripts = [marketStatus, live_indexes, eps, dividend, LiveStockPrices, dailyFloorsheet, announcements, chromeKiller]
+    scripts = [marketStatus, live_indexes, eps, dividend, live_stock, dailyFloorsheet, announcements, chromeKiller]
 
 
     # Create a ProcessPoolExecutor within the main block
