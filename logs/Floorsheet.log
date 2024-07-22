@@ -176,3 +176,28 @@
 2024-07-17 16:28:11,744 - INFO - Log File Set!
 2024-07-17 16:28:12,447 - INFO - Initializing schedule_jobs...
 2024-07-17 16:28:12,448 - INFO - Job scheduled successfully.
+2024-07-17 16:38:16,607 - INFO - Log File Set!
+2024-07-17 16:38:18,508 - INFO - Log File Set!
+2024-07-17 16:38:18,510 - INFO - Log File Set!
+2024-07-17 16:38:18,510 - INFO - Log File Set!
+2024-07-17 16:38:18,510 - INFO - Log File Set!
+2024-07-17 16:38:18,534 - INFO - Log File Set!
+2024-07-17 16:38:18,548 - INFO - Log File Set!
+2024-07-17 16:38:18,592 - INFO - Log File Set!
+2024-07-17 16:38:18,606 - INFO - Log File Set!
+2024-07-17 16:38:19,160 - INFO - Initializing schedule_jobs...
+2024-07-17 16:38:19,161 - INFO - Job scheduled successfully.
+2024-07-17 17:13:00,396 - INFO - Log File Set!
+2024-07-17 17:13:00,397 - INFO - Initializing schedule_jobs...
+2024-07-17 17:13:00,397 - INFO - Job scheduled successfully.
+2024-07-17 17:13:13,115 - INFO - Log File Set!
+2024-07-17 17:13:13,117 - INFO - Running Job func
+2024-07-17 17:13:13,119 - INFO - Creating browser instance...
+2024-07-17 17:13:14,625 - INFO - Navigating to https://www.nepalstock.com.np/floor-sheet...
+2024-07-17 17:13:14,896 - ERROR - An error occurred while navigating to the URL: net::ERR_EMPTY_RESPONSE at https://www.nepalstock.com.np/floor-sheet
+2024-07-17 17:13:14,896 - INFO - Closing the browser...
+2024-07-17 17:13:15,476 - INFO - Connecting to the database...
+2024-07-17 17:13:17,000 - INFO - Database connection established.
+2024-07-17 17:13:17,845 - INFO - Inserting/updating Floorsheet Data
+2024-07-17 17:13:18,034 - INFO - Floorsheet Data Inserted.
+2024-07-17 17:13:18,223 - INFO - Database connection closed.

@@ -141,6 +141,7 @@ async def scrapy_extraction():
                     class_property = await next_button[0].getProperty('className')
                     await page.waitFor(2000)
                     class_value = await class_property.jsonValue()
+                    print(class_value)
                     if "disabled" in class_value:
                         logger.info("Reached the last page. Stopping extraction.")
                         break
@@ -273,5 +274,5 @@ def dailyFloorsheet():
             
 
 if __name__ == "__main__":
-    dailyFloorsheet()
+    job()
 
